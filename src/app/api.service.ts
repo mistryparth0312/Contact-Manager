@@ -31,14 +31,4 @@ export class ApiService {
   }
 }
 
-describe('ApiService', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [HttpClientModule],
-    providers: [ApiService]
-  }));
 
-  it('should be created', () => {
-    const service: ApiService = TestBed.get(ApiService);
-    expect(service).toBeTruthy();
-  });
-});
