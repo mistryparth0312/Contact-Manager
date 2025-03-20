@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import { Contact } from  './contact';
+import { TestBed } from '@angular/core/testing';
+import { ApiService } from './api.service';
 
 @Injectable({
   providedIn: 'root'
@@ -28,3 +30,15 @@ export class ApiService {
     return this.httpClient.delete(`${this.API_SERVER}/contact/${id}`);
   }
 }
+
+describe('ApiService', () => {
+  beforeEach(() => TestBed.configureTestingModule({
+    imports: [HttpClientModule],
+    providers: [ApiService]
+  }));
+
+  it('should be created', () => {
+    const service: ApiService = TestBed.get(ApiService);
+    expect(service).toBeTruthy();
+  });
+});
