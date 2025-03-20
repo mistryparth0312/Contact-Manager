@@ -13,14 +13,16 @@ import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import {ContactComponent} from "./pages/contact/contact.component";
-import {NzInputModule} from "ng-zorro-antd/input";
-import {NzWaveModule} from "ng-zorro-antd/core/wave";
-import {NzButtonModule} from "ng-zorro-antd/button";
-import {NzGridModule} from "ng-zorro-antd/grid";
-import {NzFormModule} from "ng-zorro-antd/form";
+import { NzInputModule} from "ng-zorro-antd/input";
+import { NzWaveModule} from "ng-zorro-antd/core/wave";
+import { NzButtonModule} from "ng-zorro-antd/button";
+import { NzGridModule} from "ng-zorro-antd/grid";
+import { NzFormModule} from "ng-zorro-antd/form";
 import { NzTableModule } from "ng-zorro-antd/table";
 import { NzDividerModule } from "ng-zorro-antd/divider";
 import { NzPopconfirmModule } from "ng-zorro-antd/popconfirm";
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzSiderModule } from 'ng-zorro-antd/sider';
 
 registerLocaleData(en);
 
@@ -46,7 +48,8 @@ registerLocaleData(en);
     NzTableModule,
     NzDividerModule,
     ReactiveFormsModule,
-    NzPopconfirmModule
+    NzPopconfirmModule,
+    NzSiderModule
 
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
