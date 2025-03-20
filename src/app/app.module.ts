@@ -21,8 +21,7 @@ import { NzFormModule} from "ng-zorro-antd/form";
 import { NzTableModule } from "ng-zorro-antd/table";
 import { NzDividerModule } from "ng-zorro-antd/divider";
 import { NzPopconfirmModule } from "ng-zorro-antd/popconfirm";
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
-import { NzSiderModule } from 'ng-zorro-antd/sider';
+
 
 registerLocaleData(en);
 
@@ -49,7 +48,7 @@ registerLocaleData(en);
     NzDividerModule,
     ReactiveFormsModule,
     NzPopconfirmModule,
-    NzSiderModule
+
 
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
